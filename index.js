@@ -54,8 +54,8 @@ function prependCat(name){
 
 function removeLastCat(){
     
-    const newCats = cats.slice();
-    newCats.pop();
+    const newCats = cats.slice(0,-1);
+    
 
     return newCats;
 }
@@ -65,9 +65,8 @@ function removeLastCat(){
 
 function removeFirstCat(){
   
-    const newCats = cats.slice();
-
-    newCats.shift()
+    const newCats = cats.slice(1);
+    
 
     return newCats;
     
